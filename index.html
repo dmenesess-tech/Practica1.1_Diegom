@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ExcelPractica1</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="https://download.logo.wine/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.png" class="mi-imagen" alt="Excel">
+        <div class="titulo-encabezado">
+            <span>HOJA DE CÁLCULO</span>
+            <h1>Excel</h1>
+        </div>
+    </header>
+
+    <div class="controles">
+        <label for="formato">Formato:</label>
+        <select id="formato">
+            <option value="normal">Normal</option>
+            <option value="moneda">Moneda</option>
+            <option value="porcentaje">Porcentaje</option>
+            <option value="decimal">Decimal</option>
+        </select>
+        <button onclick="aplicarFormato()">Aplicar formato</button>
+    </div>
+
+    <div id="cuadricula"></div>
+
+    <script src="relacionCeldas.js"></script>
+    <script src="formulas.js"></script>
+    <script src="guardarDatos.js"></script>
+    <script src="funcionesCeldas.js"></script>
+    <script src="crearTabla.js"></script>
+</body>
+</html>
